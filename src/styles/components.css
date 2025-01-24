@@ -36,7 +36,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 20px;
+  padding: 40px;
   border-radius: 8px;
   background-color: #fff;
 }
@@ -45,11 +45,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background-color: var(--primary-color);
   border-radius: 50%;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .card__title {
@@ -106,7 +106,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 160px 1fr auto;
   gap: 20px;
-  padding: 20px;
+  padding: 40px;
   background-color: var(--secondary-color);
   border-radius: 8px;
 }
@@ -135,7 +135,7 @@
 
 .card-methods__li {
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 10px;
   font-size: 1.4rem;
   color: var(--tertiary-color);
@@ -168,8 +168,8 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
-  margin: 80px;
-  padding: 40px;
+  margin: 0 40px 40px;
+  padding: 80px;
   border-radius: 8px;
   background-color: var(--primary-color);
 }
@@ -188,6 +188,64 @@
 .cta__paragraph {
   font-size: 1.6rem;
   text-align: center;
+}
+
+@media screen and (width > 768px) { 
+  .cta {
+    margin: 0 80px 120px;
+  }
+}
+
+@media screen and (width > 1024px) { 
+  .cta {
+    margin: 0 80px 160px;
+  }
+}
+
+@media screen and (width > 1280px) { 
+  .cta {
+    margin: 0 100px 160px;
+  }
+}
+
+/* End of styles for the cta component */
+
+/* Styles start for the cta component */
+
+.section {
+  padding: 80px 40px;
+}
+
+.section__title {
+  font-size: 3rem;
+  color: var(--fourth-color);
+}
+
+.section__paragraph {
+  font-size: 1.6rem;
+  color: var(--tertiary-color);
+}
+
+@media screen and (width > 768px) {
+  .section {
+    padding: 120px 40px;
+  }
+
+  .section__title {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (width > 1024px) {
+  .section {
+    padding: 160px 60px;
+  }
+}
+
+@media screen and (width > 1280px) {
+  .section {
+    padding: 160px 100px;
+  }
 }
 
 /* End of styles for the cta component */

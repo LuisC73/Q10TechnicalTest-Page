@@ -39,7 +39,7 @@
     justify-content: space-between;
     padding: 20px 40px;
   }
-  
+
   .header__ul {
     flex-direction: row;
   }
@@ -51,7 +51,13 @@
 
 @media screen and (width > 1024px) {
   .header {
-    padding: 20px 80px;
+    padding: 20px 60px;
+  }
+}
+
+@media screen and (width > 1280px) {
+  .header {
+    padding: 20px 100px;
   }
 }
 
