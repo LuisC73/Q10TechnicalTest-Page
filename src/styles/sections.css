@@ -46,11 +46,15 @@
 }
 
 .testimonials__figure {
-  width: 40px;
-  height: 40px;
-  background-color: red;
-  border: 1px solid var(--fourth-color);
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--tertiary-color);
   border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonials__img {
+  height: 100%;
 }
 
 .testimonials__figure:not(:first-child) {
@@ -131,6 +135,11 @@
   display: flex;
   flex-direction: column;
   gap: 44px;
+}
+
+.section-items__figure {
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 @media screen and (width > 1024px) {

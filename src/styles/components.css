@@ -104,27 +104,39 @@
 .card-methods {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 160px 1fr auto;
+  grid-template-rows: 200px 1fr auto;
   gap: 20px;
-  padding: 40px;
   background-color: var(--secondary-color);
   border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-methods__decorate {
+  width: 100%;
+  height: 100%;
+  background: url('/images/ELEMENTO-1.webp') center no-repeat;
+  background-size: cover;
 }
 
 .card-methods__content {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 0 40px 40px;
 }
 
 .card-methods__title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--fourth-color);
 }
 
 .card-methods__paragraph {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: var(--tertiary-color);
+}
+
+.card-methods__ul {
+  margin-top: 20px;
 }
 
 .card-methods__ul--grid {
@@ -137,7 +149,7 @@
   display: flex;
   align-items: start;
   gap: 10px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: var(--tertiary-color);
 }
 
@@ -150,6 +162,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  padding: 0 40px 40px;
 }
 
 .card-methods__span {
@@ -206,6 +219,10 @@
   .cta__title {
     font-size: 4rem;
   }
+
+  .cta__paragraph {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (width > 1024px) {
@@ -250,6 +267,10 @@
 
   .section__title {
     font-size: 4.5rem;
+  }
+
+  .section__paragraph {
+    font-size: 1.8rem;
   }
 }
 

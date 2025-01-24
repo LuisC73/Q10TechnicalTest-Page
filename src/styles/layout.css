@@ -12,8 +12,7 @@
 }
 
 .header__logo {
-  width: 100px;
-  background-color: red;
+  width: 140px;
   font-size: 1.6rem;
 }
 
@@ -50,6 +49,10 @@
 }
 
 @media screen and (width > 768px) {
+  .header__logo {
+    width: 180px;
+  }
+
   .header__nav {
     width: fit-content;
     position: static;
@@ -94,6 +97,11 @@
   background-color: #222935;
 }
 
+.footer__logo {
+  width: 140px;
+  font-size: 1.6rem;
+}
+
 .footer__paragraph {
   font-size: 1.6rem;
   color: #fff;
@@ -101,6 +109,11 @@
 }
 
 @media screen and (width > 768px) {
+  .footer__logo {
+    width: 180px;
+    font-size: 1.6rem;
+  }
+
   .footer { 
     flex-direction: row;
     justify-content: space-between;
