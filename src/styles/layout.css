@@ -26,6 +26,11 @@
 .header__a {
   font-size: 1.6rem;
   color: var(--tertiary-color);
+  transition: all 0.4s ease;
+}
+
+.header__a:hover {
+  color: var(--fourth-color);
 }
 
 @media screen and (width > 768px) {

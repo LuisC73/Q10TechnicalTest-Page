@@ -5,6 +5,8 @@
   padding: 15px 20px;
   border-radius: 8px;
   font-size: 1.6rem;
+  font-weight: bold;
+  transition: all 0.4s ease;
 }
 
 .button--primary {
@@ -12,9 +14,17 @@
   color: #000;
 }
 
+.button--primary:hover {
+  background-color: var(--primary-hover-color);
+}
+
 .button--secondary {
   background-color: #fff;
   color: #000;
+}
+
+.button--secondary:hover {
+  background-color: #fff4d3;
 }
 
 /* End of styles for the button component */
