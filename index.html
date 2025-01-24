@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>Q10 technical test</title>
 </head>
 
 <body>
@@ -14,6 +14,7 @@
       <img src="" alt="Logo de Q10" class="header__img">
     </figure>
 
+    <!-- Init nav -->
     <nav class="header__nav">
       <ul class="header__ul">
         <li class="header__li"><a href="#" class="header__a">Inicio</a></li>
@@ -25,6 +26,11 @@
         </li>
       </ul>
     </nav>
+    <!-- Finish nav -->
+
+    <button class="header__button">
+      <div></div>
+    </button>
   </header>
 
   <main class="main">
@@ -46,7 +52,7 @@
         </figure>
       </div>
       <div class="testimonials">
-        <p class="testimonials__paragraph">Mas de <b>3,00 clientes</b> satisfechos</p>
+        <p class="testimonials__paragraph">Mas de <b class="testimonials__bold">3,00 clientes</b> satisfechos</p>
         <div class="testimonials__images">
           <!-- item -->
           <figure class="testimonials__figure">
@@ -104,26 +110,32 @@
 
     <!-- Init section 3 -->
     <section class="section-items">
-      <h3 class="section-items__title">¿Quién puede ser Partner Q10?</h3>
-      <div class="section-items__container">
-        <!-- item -->
-        <div class="item">
-          <div class="item__icon-container"></div>
-          <h4 class="item__title">Empresas de Tecnología</h4>
-          <p class="item__paragraph">Organizaciones en TI, desarrollo, hardware, software y soluciones tecnológicas
-            pueden unirse como Partners
-            Q10 y expandir su impacto en el sector educativo.</p>
+      <div class="section-items__content">
+        <h3 class="section-items__title">¿Quién puede ser Partner Q10?</h3>
+        <div class="section-items__container">
+          <!-- item -->
+          <div class="item">
+            <div class="item__icon-container"></div>
+            <div class="item__content">
+              <h4 class="item__title">Empresas de Tecnología</h4>
+              <p class="item__paragraph">Organizaciones en TI, desarrollo, hardware, software y soluciones tecnológicas
+                pueden unirse como Partners
+                Q10 y expandir su impacto en el sector educativo.</p>
+            </div>
+          </div>
+          <!-- item -->
+          <!-- item -->
+          <div class="item">
+            <div class="item__icon-container"></div>
+            <div class="item__content">
+              <h4 class="item__title">Consultores Independientes</h4>
+              <p class="item__paragraph">Consultores independientes en tecnología y/o educación pueden unirse como Partners
+                Q10 y ofrecer soluciones
+                innovadoras en el ámbito académico.</p>
+            </div>
+          </div>
+          <!-- item -->
         </div>
-        <!-- item -->
-        <!-- item -->
-        <div class="item">
-          <div class="item__icon-container"></div>
-          <h4 class="item__title">Consultores Independientes</h4>
-          <p class="item__paragraph">Consultores independientes en tecnología y/o educación pueden unirse como Partners
-            Q10 y ofrecer soluciones
-            innovadoras en el ámbito académico.</p>
-        </div>
-        <!-- item -->
       </div>
       <figure class="section-items__figure">
         <img src="" alt="Equipo de trabajo colaborando en una tarea usando una laptop" class="section-items__img">
@@ -139,14 +151,16 @@
         <!-- card -->
         <div class="card-methods">
           <div class="card-methods__decorate"></div>
-          <h5 class="card-methods__title">Refiere</h5>
-          <p class="card-methods__paragraph">Gana comisiones refiriendo a Q10. ¡Nosotros nos encargamos del resto!</p>
-          <ul class="card-methods__ul">
-            <li class="card-methods__li">
-              <div class="card-methods__icon-container"></div>
-              Obtén el 15% de comisión por cada venta efectiva.
-            </li>
-          </ul>
+          <div class="card-methods__content">
+            <h5 class="card-methods__title">Refiere</h5>
+            <p class="card-methods__paragraph">Gana comisiones refiriendo a Q10. ¡Nosotros nos encargamos del resto!</p>
+            <ul class="card-methods__ul">
+              <li class="card-methods__li">
+                <div class="card-methods__icon-container"></div>
+                Obtén el 15% de comisión por cada venta efectiva.
+              </li>
+            </ul>
+          </div>
           <div class="card-methods__cta">
             <a href="#" class="button button--secondary">Afiliate ahora</a>
             <span class="card-methods__span">Sin costo de suscripción</span>
@@ -156,27 +170,29 @@
         <!-- card -->
         <div class="card-methods">
           <div class="card-methods__decorate"></div>
-          <h5 class="card-methods__title">Revende</h5>
-          <p class="card-methods__paragraph">Aumenta tus ingresos y adquiere descuentos, beneficios e incentivos
-            exclusivos.</p>
-          <ul class="card-methods__ul">
-            <li class="card-methods__li">
-              <div class="card-methods__icon-container"></div>
-              30% de descuento en la plataforma Q10 para ventas nuevas y renovaciones.
-            </li>
-            <li class="card-methods__li">
-              <div class="card-methods__icon-container"></div>
-              Acompañamiento y capacitación personalizados.
-            </li>
-            <li class="card-methods__li">
-              <div class="card-methods__icon-container"></div>
-              Descuentos adicionales por volumen de facturación.
-            </li>
-            <li class="card-methods__li">
-              <div class="card-methods__icon-container"></div>
-              Administración de la facturación del cliente final.
-            </li>
-          </ul>
+          <div class="card-methods__content">
+            <h5 class="card-methods__title">Revende</h5>
+            <p class="card-methods__paragraph">Aumenta tus ingresos y adquiere descuentos, beneficios e incentivos
+              exclusivos.</p>
+            <ul class="card-methods__ul card-methods__ul--grid">
+              <li class="card-methods__li">
+                <div class="card-methods__icon-container"></div>
+                30% de descuento en la plataforma Q10 para ventas nuevas y renovaciones.
+              </li>
+              <li class="card-methods__li">
+                <div class="card-methods__icon-container"></div>
+                Acompañamiento y capacitación personalizados.
+              </li>
+              <li class="card-methods__li">
+                <div class="card-methods__icon-container"></div>
+                Descuentos adicionales por volumen de facturación.
+              </li>
+              <li class="card-methods__li">
+                <div class="card-methods__icon-container"></div>
+                Administración de la facturación del cliente final.
+              </li>
+            </ul>
+          </div>
           <div class="card-methods__cta">
             <a href="#" class="button button--secondary">Afiliate ahora</a>
             <span class="card-methods__span">$ 99 USD / Año</span>

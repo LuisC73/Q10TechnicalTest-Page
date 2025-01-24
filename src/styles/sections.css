@@ -1,0 +1,178 @@
+/* Styles start for the home section */
+
+.section-home {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 200px;
+  padding: 40px;
+}
+
+.section-home__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-home__title {
+  font-size: 3.2rem;
+  color: var(--fourth-color);
+}
+
+.section-home__paragraph {
+  font-size: 1.6rem;
+  color: var(--tertiary-color);
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonials__paragraph {
+  font-size: 1.6rem;
+  color: var(--tertiary-color);
+}
+
+.testimonials__bold {
+  color: var(--fourth-color);
+}
+
+.testimonials__images {
+  display: flex;
+  align-items: center;
+}
+
+.testimonials__figure {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border: 1px solid var(--fourth-color);
+  border-radius: 50%;
+}
+
+.testimonials__figure:not(:first-child) {
+  margin-left: -10px;
+}
+
+@media screen and (width > 768px) {
+  .section-home {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px;
+    gap: 40px;
+  }
+
+  .section-home__title {
+    font-size: 4.5rem;
+  }
+
+  .section-home__paragraph {
+    font-size: 1.8rem;
+  }
+
+  .testimonials {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (width > 1024px) {
+  .section-home {
+    padding: 80px;
+  }
+
+  .section-home__title {
+    font-size: 5.5rem;
+  }
+
+  .section-home__paragraph {
+    font-size: 2rem;
+  }
+}
+
+/* End of styles for the home section */
+
+/* Styles start for the cards section */
+
+.section-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 80px;
+  background-color: var(--secondary-color);
+}
+
+.section-cards__title {
+  font-size: 4.5rem;
+  color: var(--fourth-color);
+}
+
+.section-cards__paragraph {
+  font-size: 1.8rem;
+  color: var(--tertiary-color);
+}
+
+.section-cards__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+/* End of styles for the cards section */
+
+
+/* Styles start for the items section */
+
+.section-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 80px;
+}
+
+.section-items__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.section-items__title {
+  font-size: 4.5rem;
+  color: var(--fourth-color);
+}
+
+.section-items__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* End of styles for the items section */
+
+/* Styles start for the methods section */
+
+.section-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 80px;
+}
+
+.section-methods__title {
+  font-size: 4.5rem;
+  color: var(--fourth-color);
+}
+
+.section-methods__paragraph {
+  font-size: 1.6rem;
+  color: var(--tertiary-color);
+}
+
+.section-methods__container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+/* End of styles for the methods section */

@@ -1,0 +1,71 @@
+/* Styles start for the header */
+
+.header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.header__logo {
+  width: 100px;
+  background-color: red;
+  font-size: 1.6rem;
+}
+
+.header__ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__a {
+  font-size: 1.6rem;
+  color: var(--tertiary-color);
+}
+
+@media screen and (width > 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+  
+  .header__ul {
+    flex-direction: row;
+  }
+
+  .header__button {
+    display: none;
+  }
+}
+
+@media screen and (width > 1024px) {
+  .header {
+    padding: 20px 80px;
+  }
+}
+
+/* End of styles for the header */
+
+.footer {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 80px;
+  background-color: #222935;
+}
+
+.footer__paragraph {
+  font-size: 1.6rem;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* Styles start for the footer */

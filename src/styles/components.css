@@ -1,0 +1,168 @@
+/* Styles start for the button component */
+
+.button {
+  width: fit-content;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 1.6rem;
+}
+
+.button--primary {
+  background-color: var(--primary-color);
+  color: #000;
+}
+
+.button--secondary {
+  background-color: #fff;
+  color: #000;
+}
+
+/* End of styles for the button component */
+
+/* Styles start for the card component */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.card__icon-container {
+  width: 80px;
+  height: 80px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+.card__title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--fourth-color);
+}
+
+.card__paragraph {
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--tertiary-color);
+}
+
+/* End of styles for the card component */
+
+/* Styles start for the item component */
+
+.item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
+
+.item__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--fourth-color);
+}
+
+.item__paragraph {
+  font-size: 1.6rem;
+  color: var(--tertiary-color);
+}
+
+/* End of styles for the item component */
+
+/* Styles start for the card-methods component */
+
+.card-methods {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 160px 1fr auto;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+}
+
+.card-methods__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-methods__title {
+  font-size: 2rem;
+  color: var(--fourth-color);
+}
+
+.card-methods__paragraph {
+  font-size: 1.6rem;
+  color: var(--tertiary-color);
+}
+
+.card-methods__ul--grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card-methods__li {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  color: var(--tertiary-color);
+}
+
+.card-methods__cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card-methods__span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--fourth-color);
+}
+
+/* End of styles for the card-methods component */
+
+/* Styles start for the cta component */
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 80px;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+}
+
+.cta__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cta__title {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.cta__paragraph {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* End of styles for the cta component */
