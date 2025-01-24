@@ -145,7 +145,7 @@
 .section-items__container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
 }
 
 /* End of styles for the items section */

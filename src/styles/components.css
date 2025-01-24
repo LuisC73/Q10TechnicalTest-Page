@@ -32,10 +32,14 @@
 }
 
 .card__icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 80px;
   height: 80px;
   background-color: var(--primary-color);
   border-radius: 50%;
+  font-size: 4rem;
 }
 
 .card__title {
@@ -58,12 +62,18 @@
 .item {
   display: grid;
   grid-template-columns: 40px 1fr;
+  align-items: start;
+}
+
+.item__icon-container {
+  font-size: 3rem;
 }
 
 .item__content {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 4px;
 }
 
 .item__title {
@@ -116,8 +126,13 @@
 .card-methods__li {
   display: flex;
   align-items: center;
+  gap: 10px;
   font-size: 1.4rem;
   color: var(--tertiary-color);
+}
+
+.card-methods__icon-container {
+  font-size: 2rem;
 }
 
 .card-methods__cta {
