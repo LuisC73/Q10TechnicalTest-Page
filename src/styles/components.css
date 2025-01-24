@@ -129,7 +129,7 @@
 
 .card-methods__ul--grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
@@ -158,6 +158,12 @@
   color: var(--fourth-color);
 }
 
+@media screen and (width > 1280px)  {
+  .card-methods__ul--grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* End of styles for the card-methods component */
 
 /* Styles start for the cta component */
@@ -169,7 +175,7 @@
   justify-content: center;
   gap: 40px;
   margin: 0 40px 40px;
-  padding: 80px;
+  padding: 40px;
   border-radius: 8px;
   background-color: var(--primary-color);
 }
@@ -181,28 +187,34 @@
 }
 
 .cta__title {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
 }
 
 .cta__paragraph {
   font-size: 1.6rem;
   text-align: center;
+  color: #242424;
 }
 
-@media screen and (width > 768px) { 
+@media screen and (width > 768px) {
   .cta {
-    margin: 0 80px 120px;
+    margin: 0 40px 120px;
+    padding: 80px;
+  }
+
+  .cta__title {
+    font-size: 4rem;
   }
 }
 
-@media screen and (width > 1024px) { 
+@media screen and (width > 1024px) {
   .cta {
     margin: 0 80px 160px;
   }
 }
 
-@media screen and (width > 1280px) { 
+@media screen and (width > 1280px) {
   .cta {
     margin: 0 100px 160px;
   }
@@ -217,13 +229,18 @@
 }
 
 .section__title {
-  font-size: 3rem;
+  font-size: 3.3rem;
   color: var(--fourth-color);
 }
 
 .section__paragraph {
   font-size: 1.6rem;
   color: var(--tertiary-color);
+}
+
+.section__title--center,
+.section__paragraph--center {
+  text-align: center;
 }
 
 @media screen and (width > 768px) {

@@ -15,7 +15,7 @@
 }
 
 .section-home__title {
-  font-size: 3.2rem;
+  font-size: 3.5rem;
   color: var(--fourth-color);
 }
 
@@ -112,7 +112,7 @@
 
 .section--items {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 80px;
 }
 
@@ -133,6 +133,12 @@
   gap: 44px;
 }
 
+@media screen and (width > 1024px) {
+  .section--items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* End of styles for the items section */
 
 /* Styles start for the methods section */
@@ -145,8 +151,20 @@
 
 .section-methods-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
   gap: 40px;
+}
+
+@media screen and (width > 1024px) {
+  .section-methods-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (width > 1280px) {
+  .section-methods-grid {
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
 /* End of styles for the methods section */

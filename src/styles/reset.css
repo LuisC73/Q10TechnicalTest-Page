@@ -90,4 +90,5 @@ svg {
 body {
   min-height: 100vh;
   font-family: var(--font-nunito);
+  overflow-x: hidden;
 }
