@@ -42,6 +42,7 @@
 
 .header__a:hover {
   color: var(--fourth-color);
+  text-decoration: underline;
 }
 
 .header__nav {
@@ -120,6 +121,16 @@
   font-size: 1.6rem;
   color: #fff;
   white-space: nowrap;
+}
+
+.footer__a {
+  color: var(--primary-color);
+  transition: all 0.4s ease;
+}
+
+.footer__a:hover {
+  color: var(--primary-hover-color);
+  text-decoration: underline;
 }
 
 @media screen and (width > 768px) {
