@@ -12,9 +12,9 @@ Solución para la primera prueba técnica de Q10 para el puesto de desarrollador
 
 ## Built with
 
-- [HTML](https://react.dev/)
-- [CSS](https://www.typescriptlang.org/)
-- [JavaScript](https://tailwindcss.com/)
+- HTML
+- CSS
+- JavaScript
 
 ## How to use it
 
