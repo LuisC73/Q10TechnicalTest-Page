@@ -1,5 +1,4 @@
 import 'boxicons/css/boxicons.min.css';
-import './style.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   const buttonHamburger = document.querySelector('.hamburger-menu');
