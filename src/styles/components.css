@@ -122,7 +122,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 0 40px 40px;
+  padding: 0 20px 20px;
 }
 
 .card-methods__title {
@@ -159,16 +159,28 @@
 
 .card-methods__cta {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 0 40px 40px;
+  padding: 0 20px 20px;
 }
 
 .card-methods__span {
   font-size: 1.4rem;
   font-weight: bold;
   color: var(--fourth-color);
+}
+
+@media screen and (width > 768px) {
+  .card-methods__content {
+    padding: 0 40px 40px;
+  }
+
+  .card-methods__cta {
+    flex-direction: row;
+    padding: 0 40px 40px;
+  }
 }
 
 @media screen and (width > 1280px) {
@@ -183,7 +195,7 @@
 
 .cta {
   width: 100%;
-  padding: 0 40px 80px;
+  padding: 0 20px 80px;
 }
 
 .cta__container {
@@ -198,6 +210,8 @@
   margin: 0 auto;
   border-radius: 8px;
   background-color: var(--primary-color);
+  background: url('/images/banner_naranjado.webp') center no-repeat;
+  background-size: 100% 100%;
 }
 
 .cta__content {
@@ -252,7 +266,8 @@
 /* Styles start for the cta component */
 
 .section {
-  padding: 80px 40px;
+  position: relative;
+  padding: 80px 20px;
 }
 
 .section--bg {

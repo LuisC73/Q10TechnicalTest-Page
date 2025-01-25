@@ -57,6 +57,12 @@
             <img src="/images/ELEMENTO-2.webp" alt="Mujer sonriendo" class="section-home__img">
           </figure>
         </div>
+        <picture class="section-home__picture">
+          <!-- Imagen para tablet (mínimo 768px) -->
+          <source srcset="/images/home-bg-tablet.png" media="(min-width: 768px)">
+          <!-- Imagen para móvil (por defecto si no se cumple el media query anterior) -->
+          <img src="/images/home-bg-mobile.png" alt="Descripción de la imagen">
+        </picture>        
         <div class="testimonials">
           <p class="testimonials__paragraph">Mas de <b class="testimonials__bold">3,00 clientes</b> satisfechos</p>
           <div class="testimonials__images">
