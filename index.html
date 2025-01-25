@@ -3,16 +3,37 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Q10 technical test</title>
+  <meta name="description"
+    content="Página elaborada y diseñada por Luis Miguel Castro como solución de la prueba técnica de Q10 para el puesto de frontend developer.">
+  <meta name="keywords"
+    content="Q10, programa de partners, solución técnica, colaboración empresarial, partners Q10, optimización empresarial, productividad, relaciones comerciales">
+  <meta name="author" content="Miguel Castro">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Programa de Partners Q10 | Solución Técnica">
+  <meta property="og:description"
+    content="Página elaborada y diseñada por Luis Miguel Castro como solución de la prueba técnica de Q10 para el puesto de frontend developer.">
+  <meta property="og:image" content="/open-graph.jpg">
+  <meta property="og:url" content="...">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Programa de Partners Q10 | Solución Técnica">
+  <meta name="twitter:description"
+    content="Página elaborada y diseñada por Luis Miguel Castro como solución de la prueba técnica de Q10 para el puesto de frontend developer.">
+  <meta name="twitter:image" content="/open-graph.jpg">
+
+  <title>Programa de Partners Q10 | Solución Técnica</title>
 </head>
 
 <body>
   <header class="header">
     <div class="header__container">
       <figure class="header__logo">
-        <img src="/images/LOGO-Q10.png" alt="Logo de Q10" class="header__img">
+        <img src="/images/LOGO-Q10.png" alt="Logo de Q10" class="header__img" loading="lazy">
       </figure>
 
       <!-- Init nav -->
@@ -30,7 +51,7 @@
       <!-- Finish nav -->
 
       <!-- button hamburger -->
-      <button class="hamburger-menu">
+      <button class="hamburger-menu" aria-label="Abrir menú de navegación">
         <div class="hamburger-menu__item"></div>
       </button>
       <!-- button hamburger -->
@@ -51,17 +72,17 @@
         <div class="section-home__images">
           <figure class="section-home__figure section-home__figure--left">
             <img src="/images/ELEMENTO-3.webp" alt="Mujer sonriendo mientras sostiene una tablet"
-              class="section-home__img">
+              class="section-home__img" loading="lazy">
           </figure>
           <figure class="section-home__figure section-home__figure--right">
-            <img src="/images/ELEMENTO-2.webp" alt="Mujer sonriendo" class="section-home__img">
+            <img src="/images/ELEMENTO-2.webp" alt="Mujer sonriendo" class="section-home__img" loading="lazy">
           </figure>
         </div>
         <picture class="section-home__picture">
           <!-- Image for tablet -->
           <source srcset="/images/home-bg-tablet.png" media="(min-width: 768px)">
           <!-- Image for mobile -->
-          <img src="/images/home-bg-mobile.png" alt="Descripción de la imagen">
+          <img src="/images/home-bg-mobile.png" alt="Descripción de la imagen" loading="lazy">
         </picture>
         <div class="testimonials">
           <p class="testimonials__paragraph">Mas de <b class="testimonials__bold">3,00 clientes</b> satisfechos</p>
@@ -174,7 +195,8 @@
         </div>
         <figure class="section-items__figure">
           <img src="/images/personas_excepcionales.webp"
-            alt="Equipo de trabajo colaborando en una tarea usando una laptop" class="section-items__img">
+            alt="Equipo de trabajo colaborando en una tarea usando una laptop" class="section-items__img"
+            loading="lazy">
         </figure>
       </div>
     </section>
@@ -274,11 +296,11 @@
 
   <footer class="footer">
     <figure class="footer__logo">
-      <img src="/images/LOGO-Q10-BLANCO.png" alt="Logo de Q10" class="footer__img">
+      <img src="/images/LOGO-Q10-BLANCO.png" alt="Logo de Q10" class="footer__img" loading="lazy">
     </figure>
 
-    <p class="footer__paragraph">Desarrollado y diseñado por <a href="http://" target="_blank" rel="noopener noreferrer"
-        class="footer__a">Miguel Castro</a></p>
+    <p class="footer__paragraph">Desarrollado y diseñado por <a href="https://miguelcastroc.com/" target="_blank"
+        rel="noopener noreferrer" class="footer__a">Miguel Castro</a></p>
   </footer>
 
   <script type="module" src="/src/main.js"></script>
