@@ -75,6 +75,14 @@
   right: 0;
 }
 
+.section-home__img {
+  aspect-ratio: 1;
+}
+
+.section-home__img-picture {
+  aspect-ratio: 1.29; 
+}
+
 .testimonials {
   align-self: end;
   display: flex;
@@ -106,6 +114,7 @@
 
 .testimonials__img {
   height: 100%;
+  aspect-ratio: 1.44;
 }
 
 .testimonials__figure:not(:first-child) {
@@ -390,6 +399,7 @@
 .section-items__img {
   position: relative;
   border-radius: 8px;
+  aspect-ratio: 1.78;
   z-index: 2;
 }
 

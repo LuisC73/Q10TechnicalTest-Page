@@ -27,6 +27,10 @@
   font-size: 1.6rem;
 }
 
+.header__img {
+  aspect-ratio: 2.89;
+}
+
 .header__ul {
   display: flex;
   flex-direction: column;
@@ -115,6 +119,10 @@
 .footer__logo {
   width: 140px;
   font-size: 1.6rem;
+}
+
+.footer__img {
+  aspect-ratio: 2.89;
 }
 
 .footer__paragraph {
