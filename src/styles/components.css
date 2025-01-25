@@ -64,6 +64,7 @@
 .card__paragraph {
   font-size: 1.6rem;
   text-align: center;
+  text-wrap: balance;
   color: var(--tertiary-color);
 }
 
@@ -96,6 +97,7 @@
 
 .item__paragraph {
   font-size: 1.6rem;
+  text-wrap: balance;
   color: var(--tertiary-color);
 }
 
@@ -136,6 +138,7 @@
 
 .card-methods__paragraph {
   font-size: 1.8rem;
+  text-wrap: balance;
   color: var(--tertiary-color);
 }
 
@@ -154,6 +157,7 @@
   align-items: start;
   gap: 10px;
   font-size: 1.6rem;
+  text-wrap: balance;
   color: var(--tertiary-color);
 }
 
@@ -291,6 +295,7 @@
 
 .section__paragraph {
   font-size: 1.6rem;
+  text-wrap: balance;
   color: var(--tertiary-color);
 }
 

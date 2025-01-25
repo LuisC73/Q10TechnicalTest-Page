@@ -48,7 +48,12 @@
 
 .section-home__paragraph {
   font-size: 1.6rem;
+  text-wrap: balance;
   color: var(--tertiary-color);
+}
+
+.section-home .button {
+  margin-top: 20px;
 }
 
 .section-home__images {
