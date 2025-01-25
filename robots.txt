@@ -1,3 +1,1 @@
 User-agent: *
-
-Sitemap: https://luisc73.github.io/Q10TechnicalTest-Page/sitemap.xml
