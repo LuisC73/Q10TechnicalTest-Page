@@ -16,7 +16,7 @@
   width: 118px;
   height: 104px;
   background: url('/images/hexagono-naranjado.png') center no-repeat;
-  background-size: cover;
+  background-size: contain;
   transform: rotate(38deg);
   z-index: -1;
 }
@@ -26,10 +26,10 @@
   position: absolute;
   bottom: -40px;
   left: 65%;
-  width: 88px;
+  width: 87px;
   height: 80px;
   background: url('/images/hexagono-negro.png') center no-repeat;
-  background-size: cover;
+  background-size: contain;
   transform: rotate(38deg);
   z-index: -1;
 }
@@ -262,10 +262,35 @@
 /* Styles start for the cards section */
 
 .section-cards {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+
+.section-cards::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: -100px;
+  width: 118px;
+  height: 104px;
+  background: url('/images/hexagono-naranjado.png') center no-repeat;
+  background-size: contain;
+  transform: rotate(38deg);
+}
+
+.section-cards::after {
+  content: '';
+  position: absolute;
+  bottom: 60px;
+  right: -100px;
+  width: 118px;
+  height: 104px;
+  background: url('/images/hexagono-negro.png') center no-repeat;
+  background-size: contain;
+  transform: rotate(38deg);
 }
 
 .section-cards__grid {
@@ -276,14 +301,39 @@
   margin-top: 60px;
 }
 
+@media screen and (width > 1024px) {
+  .section-cards::before {
+    top: 50px;
+    left: -140px;
+  }
+
+  .section-cards::after {
+    bottom: 0px;
+    right: -150px;
+  }
+}
+
 /* End of styles for the cards section */
 
 /* Styles start for the items section */
 
 .section-items {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   gap: 80px;
+}
+
+.section-items::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  right: -100px;
+  width: 118px;
+  height: 104px;
+  background: url('/images/hexagono-naranjado.png') center no-repeat;
+  background-size: contain;
+  transform: rotate(38deg);
 }
 
 .section-items__container {
@@ -304,13 +354,53 @@
 }
 
 .section-items__figure {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 8px;
-  overflow: hidden;
+}
+
+.section-items__figure::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: -50px;
+  width: 118px;
+  height: 104px;
+  background: url('/images/hexagono-naranjado.png') center no-repeat;
+  background-size: contain;
+  transform: rotate(38deg);
+  z-index: 1;
+}
+
+.section-items__figure::after {
+  content: '';
+  position: absolute;
+  bottom: 20%;
+  right: -50px;
+  width: 118px;
+  height: 104px;
+  background: url('/images/hexagono-negro.png') center no-repeat;
+  background-size: contain;
+  transform: rotate(38deg);
+  z-index: 1;
+}
+
+.section-items__img {
+  position: relative;
+  border-radius: 8px;
+  z-index: 2;
 }
 
 @media screen and (width > 1024px) {
   .section-items {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-items::before {
+    top: 20px;
+    left: -150px;
   }
 }
 
@@ -319,9 +409,34 @@
 /* Styles start for the methods section */
 
 .section-methods {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+.section-methods::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  right: -100px;
+  width: 118px;
+  height: 104px;
+  background: url('/images/hexagono-naranjado.png') center no-repeat;
+  background-size: contain;
+  transform: rotate(38deg);
+}
+
+.section-methods::after {
+  content: '';
+  position: absolute;
+  bottom: 50px;
+  right: -100px;
+  width: 118px;
+  height: 104px;
+  background: url('/images/hexagono-negro.png') center no-repeat;
+  background-size: contain;
+  transform: rotate(38deg);
 }
 
 .section-methods__grid {
@@ -331,6 +446,15 @@
 }
 
 @media screen and (width > 1024px) {
+  .section-methods::before {
+    right: auto;
+    left: -150px;
+  }
+
+  .section-methods::after {
+    right: -160px;
+  }
+
   .section-methods__grid {
     grid-template-columns: repeat(2, 1fr);
   }
