@@ -1,9 +1,12 @@
 /* Styles start for the header */
 
 .header {
-  position: relative;
+  position: sticky;
+  top: 0;
   width: 100vw;
   padding: 0 20px;
+  background-color: #fff;
+  z-index: 10;
 }
 
 .header__container {
@@ -16,6 +19,7 @@
   margin: 0 auto;
   padding: 20px 0;
   border-bottom: 1px solid #d6d6d6;
+  background-color: #fff;
 }
 
 .header__logo {
@@ -42,17 +46,23 @@
 
 .header__nav {
   position: absolute;
+  top: 100%;
+  left: 0;
   width: 100%;
   height: auto;
-  top: 100%;
-  opacity: 0;
-  display: none;
+  padding: 20px 0;
+  border-bottom: 1px solid #d6d6d6;
+  background-color: #fff;
+  transform: translateX(-100%);
+  z-index: 3;
+  transition: all 0.5s;
+  pointer-events: none;
 }
 
-.header__button {
-  background: none;
-  font-size: 3.5rem;
-  cursor: pointer;
+.header__nav--active {
+  top: 100%;
+  transform: translateX(0);
+  pointer-events: all;
 }
 
 @media screen and (width > 768px) {
@@ -63,16 +73,14 @@
   .header__nav {
     width: fit-content;
     position: static;
-    opacity: 1;
-    display: block;
+    padding: 0;
+    border: none;
+    transform: translate(0);
+    pointer-events: all;
   }
 
   .header__ul {
     flex-direction: row;
-  }
-
-  .header__button {
-    display: none;
   }
 }
 
