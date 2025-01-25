@@ -15,7 +15,7 @@
   left: -120px;
   width: 118px;
   height: 104px;
-  background: url('/images/hexagono-naranjado.png') center no-repeat;
+  background: url('/images/hexagono-naranjado.webp') center no-repeat;
   background-size: contain;
   transform: rotate(38deg);
   z-index: -1;
@@ -28,7 +28,7 @@
   left: 65%;
   width: 87px;
   height: 80px;
-  background: url('/images/hexagono-negro.png') center no-repeat;
+  background: url('/images/hexagono-negro.webp') center no-repeat;
   background-size: contain;
   transform: rotate(38deg);
   z-index: -1;
@@ -193,7 +193,7 @@
     left: 55%;
     width: 120px;
     height: 108px;
-    background: url('../../public/images/hexagono-naranjado.png') center no-repeat;
+    background: url('../../public/images/hexagono-naranjado.webp') center no-repeat;
     background-size: cover;
     transform: rotate(38deg);
     z-index: -1;
@@ -276,7 +276,7 @@
   left: -100px;
   width: 118px;
   height: 104px;
-  background: url('/images/hexagono-naranjado.png') center no-repeat;
+  background: url('/images/hexagono-naranjado.webp') center no-repeat;
   background-size: contain;
   transform: rotate(38deg);
 }
@@ -288,7 +288,7 @@
   right: -100px;
   width: 118px;
   height: 104px;
-  background: url('/images/hexagono-negro.png') center no-repeat;
+  background: url('/images/hexagono-negro.webp') center no-repeat;
   background-size: contain;
   transform: rotate(38deg);
 }
@@ -331,7 +331,7 @@
   right: -100px;
   width: 118px;
   height: 104px;
-  background: url('/images/hexagono-naranjado.png') center no-repeat;
+  background: url('/images/hexagono-naranjado.webp') center no-repeat;
   background-size: contain;
   transform: rotate(38deg);
 }
@@ -368,7 +368,7 @@
   left: -50px;
   width: 118px;
   height: 104px;
-  background: url('/images/hexagono-naranjado.png') center no-repeat;
+  background: url('/images/hexagono-naranjado.webp') center no-repeat;
   background-size: contain;
   transform: rotate(38deg);
   z-index: 1;
@@ -381,7 +381,7 @@
   right: -50px;
   width: 118px;
   height: 104px;
-  background: url('/images/hexagono-negro.png') center no-repeat;
+  background: url('/images/hexagono-negro.webp') center no-repeat;
   background-size: contain;
   transform: rotate(38deg);
   z-index: 1;
@@ -422,7 +422,7 @@
   right: -100px;
   width: 118px;
   height: 104px;
-  background: url('/images/hexagono-naranjado.png') center no-repeat;
+  background: url('/images/hexagono-naranjado.webp') center no-repeat;
   background-size: contain;
   transform: rotate(38deg);
 }
@@ -434,7 +434,7 @@
   right: -100px;
   width: 118px;
   height: 104px;
-  background: url('/images/hexagono-negro.png') center no-repeat;
+  background: url('/images/hexagono-negro.webp') center no-repeat;
   background-size: contain;
   transform: rotate(38deg);
 }
