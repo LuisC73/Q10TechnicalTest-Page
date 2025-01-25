@@ -1,0 +1,469 @@
+/* Styles start for the home section */
+
+.section-home {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 40px;
+}
+
+.section-home::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: -120px;
+  width: 118px;
+  height: 104px;
+  background: url('/images/hexagono-naranjado.webp') center no-repeat;
+  background-size: contain;
+  transform: rotate(38deg);
+  z-index: -1;
+}
+
+.section-home::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 65%;
+  width: 87px;
+  height: 80px;
+  background: url('/images/hexagono-negro.webp') center no-repeat;
+  background-size: contain;
+  transform: rotate(38deg);
+  z-index: -1;
+}
+
+.section-home__container {
+  max-width: 672px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-home__title {
+  font-size: 3.5rem;
+  color: var(--fourth-color);
+}
+
+.section-home__paragraph {
+  font-size: 1.6rem;
+  color: var(--tertiary-color);
+}
+
+.section-home__images {
+  display: none;
+}
+
+.section-home__picture {
+  grid-row: 2 / 3;
+}
+
+.section-home__figure {
+  position: absolute;
+  width: 338px;
+  height: 338px;
+}
+
+.section-home__figure--left {
+  top: 0;
+  left: 0;
+}
+
+.section-home__figure--right {
+  bottom: 0;
+  right: 0;
+}
+
+.testimonials {
+  align-self: end;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonials__paragraph {
+  font-size: 1.6rem;
+  color: var(--tertiary-color);
+}
+
+.testimonials__bold {
+  color: var(--fourth-color);
+}
+
+.testimonials__images {
+  display: flex;
+  align-items: center;
+}
+
+.testimonials__figure {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #c9c8c8;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonials__img {
+  height: 100%;
+}
+
+.testimonials__figure:not(:first-child) {
+  margin-left: -10px;
+}
+
+@media screen and (width > 768px) {
+  .section-home::before {
+    top: -80px;
+    left: -120px;
+  }
+
+  .section-home::after {
+    bottom: -80px;
+    left: 60%;
+  }
+
+  .section-home__title {
+    font-size: 4rem;
+  }
+
+  .section-home__paragraph {
+    font-size: 1.6rem;
+  }
+
+  .section-home__figure {
+    width: 328px;
+    height: 328px;
+  }
+
+  .testimonials {
+    grid-column: span 2;
+  }
+
+  .testimonials__figure {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (width > 1024px) {
+  .section-home {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 200px;
+  }
+
+  .section-home::before {
+    top: -100px;
+    left: -120px;
+  }
+
+  .section-home__title {
+    font-size: 4.5rem;
+  }
+
+  .section-home__paragraph {
+    font-size: 1.8rem;
+  }
+
+  .section-home__images {
+    position: relative;
+    display: block;
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    min-height: 350px;
+  }
+
+  .section-home__images::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 85%;
+    width: 120px;
+    height: 108px;
+    background: url('/images/ELEMENTO-4.webp') center no-repeat;
+    background-size: cover;
+    transform: rotate(38deg);
+    z-index: -1;
+  }
+
+  .section-home__images::after {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 55%;
+    width: 120px;
+    height: 108px;
+    background: url('../../public/images/hexagono-naranjado.webp') center no-repeat;
+    background-size: cover;
+    transform: rotate(38deg);
+    z-index: -1;
+  }
+
+  .section-home__picture {
+    display: none;
+  }
+
+  .section-home__figure {
+    width: 338px;
+    height: 338px;
+  }
+
+  .section-home__figure--right {
+    bottom: -300px;
+    right: 0;
+  }
+}
+
+@media screen and (width > 1280px) {
+  .section-home::before {
+    top: -100px;
+    left: -150px;
+  }
+
+  .section-home__title {
+    font-size: 5.5rem;
+  }
+
+  .section-home__paragraph {
+    font-size: 2rem;
+  }
+
+  .section-home__images {
+    min-height: auto;
+  }
+
+  .section-home__images::before {
+    left: 75%;
+  }
+
+  .section-home__figure {
+    width: 388px;
+    height: 388px;
+  }
+
+  .section-home__figure--left {
+    top: -100px;
+  }
+
+  .section-home__figure--right {
+    bottom: -300px;
+  }
+}
+
+@media screen and (width > 1880px) {
+  .section-home__figure {
+    width: 438px;
+    height: 438px;
+  }
+}
+
+/* End of styles for the home section */
+
+/* Styles start for the cards section */
+
+.section-cards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-cards::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: -100px;
+  width: 118px;
+  height: 104px;
+  background: url('/images/hexagono-naranjado.webp') center no-repeat;
+  background-size: contain;
+  transform: rotate(38deg);
+}
+
+.section-cards::after {
+  content: '';
+  position: absolute;
+  bottom: 60px;
+  right: -100px;
+  width: 118px;
+  height: 104px;
+  background: url('/images/hexagono-negro.webp') center no-repeat;
+  background-size: contain;
+  transform: rotate(38deg);
+}
+
+.section-cards__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 80px;
+  margin-top: 60px;
+}
+
+@media screen and (width > 1024px) {
+  .section-cards::before {
+    top: 50px;
+    left: -140px;
+  }
+
+  .section-cards::after {
+    bottom: 0px;
+    right: -150px;
+  }
+}
+
+/* End of styles for the cards section */
+
+/* Styles start for the items section */
+
+.section-items {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 80px;
+}
+
+.section-items::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  right: -100px;
+  width: 118px;
+  height: 104px;
+  background: url('/images/hexagono-naranjado.webp') center no-repeat;
+  background-size: contain;
+  transform: rotate(38deg);
+}
+
+.section-items__container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.section-items__title {
+  font-size: 3rem;
+  color: var(--fourth-color);
+}
+
+.section-items__content {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.section-items__figure {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.section-items__figure::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: -50px;
+  width: 118px;
+  height: 104px;
+  background: url('/images/hexagono-naranjado.webp') center no-repeat;
+  background-size: contain;
+  transform: rotate(38deg);
+  z-index: 1;
+}
+
+.section-items__figure::after {
+  content: '';
+  position: absolute;
+  bottom: 20%;
+  right: -50px;
+  width: 118px;
+  height: 104px;
+  background: url('/images/hexagono-negro.webp') center no-repeat;
+  background-size: contain;
+  transform: rotate(38deg);
+  z-index: 1;
+}
+
+.section-items__img {
+  position: relative;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+@media screen and (width > 1024px) {
+  .section-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-items::before {
+    top: 20px;
+    left: -150px;
+  }
+}
+
+/* End of styles for the items section */
+
+/* Styles start for the methods section */
+
+.section-methods {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.section-methods::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  right: -100px;
+  width: 118px;
+  height: 104px;
+  background: url('/images/hexagono-naranjado.webp') center no-repeat;
+  background-size: contain;
+  transform: rotate(38deg);
+}
+
+.section-methods::after {
+  content: '';
+  position: absolute;
+  bottom: 50px;
+  right: -100px;
+  width: 118px;
+  height: 104px;
+  background: url('/images/hexagono-negro.webp') center no-repeat;
+  background-size: contain;
+  transform: rotate(38deg);
+}
+
+.section-methods__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media screen and (width > 1024px) {
+  .section-methods::before {
+    right: auto;
+    left: -150px;
+  }
+
+  .section-methods::after {
+    right: -160px;
+  }
+
+  .section-methods__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (width > 1280px) {
+  .section-methods__grid {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+/* End of styles for the methods section */

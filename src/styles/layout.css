@@ -1,0 +1,160 @@
+/* Styles start for the header */
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  padding: 0 20px;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.header__container {
+  width: 100%;
+  max-width: 1880px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-bottom: 1px solid #d6d6d6;
+  background-color: #fff;
+}
+
+.header__logo {
+  width: 140px;
+  font-size: 1.6rem;
+}
+
+.header__ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__a {
+  font-size: 1.6rem;
+  color: var(--tertiary-color);
+  transition: all 0.4s ease;
+}
+
+.header__a:hover {
+  color: var(--fourth-color);
+  text-decoration: underline;
+}
+
+.header__nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  border-bottom: 1px solid #d6d6d6;
+  background-color: #fff;
+  transform: translateX(-100%);
+  z-index: 3;
+  transition: all 0.5s;
+  pointer-events: none;
+}
+
+.header__nav--active {
+  top: 100%;
+  transform: translateX(0);
+  pointer-events: all;
+}
+
+@media screen and (width > 768px) {
+  .header__logo {
+    width: 180px;
+  }
+
+  .header__nav {
+    width: fit-content;
+    position: static;
+    padding: 0;
+    border: none;
+    transform: translate(0);
+    pointer-events: all;
+  }
+
+  .header__ul {
+    flex-direction: row;
+  }
+}
+
+@media screen and (width > 1024px) {
+  .header {
+    padding: 0 60px;
+  }
+}
+
+@media screen and (width > 1280px) {
+  .header {
+    padding: 0 100px;
+  }
+}
+
+/* End of styles for the header */
+
+/* Styles start for the footer */
+
+.footer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #222935;
+}
+
+.footer__logo {
+  width: 140px;
+  font-size: 1.6rem;
+}
+
+.footer__paragraph {
+  font-size: 1.6rem;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.footer__a {
+  color: var(--primary-color);
+  transition: all 0.4s ease;
+}
+
+.footer__a:hover {
+  color: var(--primary-hover-color);
+  text-decoration: underline;
+}
+
+@media screen and (width > 768px) {
+  .footer__logo {
+    width: 180px;
+    font-size: 1.6rem;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (width > 1024px) {
+  .footer {
+    padding: 20px 80px;
+  }
+}
+
+@media screen and (width > 1280px) {
+  .footer {
+    padding: 20px 100px;
+  }
+}
+
+/* End of styles for the header */
